@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Test repo",
     "keywords": [
-        "test"
+        "test",
+        "json",
+        "kevin"
     ],
+    "homepage": "www.google.com",
     "devDependencies": {}
 }
