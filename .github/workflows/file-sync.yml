@@ -14,10 +14,11 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@master
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@v2.0.0
+        uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/test@test
+            kbrashears5/test@test1
           FILES: |
-            ./newdestination/test.txt=./newdestination3/test.txt
+            ./newdestination/test.txt=./newdestination4/test.txt
           TOKEN: ${{ secrets.ACTIONS }}
+          PULL_REQUEST: true
