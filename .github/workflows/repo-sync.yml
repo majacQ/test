@@ -16,6 +16,8 @@ jobs:
       - name: Repo Sync
         uses: kbrashears5/github-action-repo-sync@master
         with:
-          TYPE: npm
-          PATH: package.json
+          # TYPE: npm
+          # PATH: package.json
+          TYPE: nuget
+          PATH: net.csproj
           TOKEN: ${{ secrets.ACTIONS }}

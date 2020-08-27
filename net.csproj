@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>name</AssemblyName>
+    <RootNamespace>name</RootNamespace>
+    <Authors>Kevin Brashears</Authors>
+    <Company>kbrashears5</Company>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>csproj description</Description>
+    <PackageProjectUrl>https://github.com/kbrashears5/test</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kbrashears5/test</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>test1,test2</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+</Project>
