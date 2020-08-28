@@ -19,10 +19,10 @@ jobs:
           REPOSITORIES: |
             kbrashears5/test@test
           FILES: |
-            ./newdestination/test.txt=./filesync1/test.txt
-            ./newdestination/test.txt=filesync2/test.txt
-            ./newdestination/test.txt=/filesync3/test.txt
-            ./newdestination/test.txt = ./filesync4/test.txt
-            ./.github/workflows=newFolder
+            .github/workflows/file-sync.yml=./filesync1/test.txt
+            .github/workflows/file-sync.yml=filesync2/test.txt
+            .github/workflows/file-sync.yml=/filesync3/test.txt
+            .github/workflows/file-sync.yml = ./filesync4/test.txt
+            .github/workflows=newFolder
           TOKEN: ${{ secrets.ACTIONS }}
           PULL_REQUEST: false
