@@ -20,5 +20,7 @@ jobs:
             kbrashears5/test@test1
           FILES: |
             ./newdestination/test.txt=./newdestination4/test.txt
+            ./newdestination/test.txt = ./newdestination5/test.txt
+            ./.github/workflows=newFolder
           TOKEN: ${{ secrets.ACTIONS }}
-          PULL_REQUEST: true
+          PULL_REQUEST: false
