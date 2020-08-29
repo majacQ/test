@@ -15,7 +15,7 @@ jobs:
         uses: kbrashears5/github-action-repo-setup@master
         with:
           REPOSITORIES: |
-            kbrashears5/github-action-repo-setup
+            kbrashears5/test
           TOKEN: ${{ secrets.ACTIONS }}
           ALLOW_ISSUES: 'true'
           ALLOW_PROJECTS: 'true'
