@@ -21,3 +21,4 @@ jobs:
           MERGE_COMMIT: 'false'
           REBASE_MERGE: 'false'
           DELETE_HEAD: 'true'
+          BRANCH_PROTECTION_REQUIRED_REVIEWERS: '14'
