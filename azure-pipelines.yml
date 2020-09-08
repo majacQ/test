@@ -1,0 +1,21 @@
+# define pipeline number (https://docs.microsoft.com/en-us/azure/devops/pipelines/build/options?view=azure-devops&tabs=yaml#build-number-format)
+name: 1.0$(Rev:.r)
+
+# define resources (https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=example#repository-resource)
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: kbrashears5/yaml
+      endpoint: kbrashears5
+
+stages:
+- stage: 'Build'
+  jobs:
+  - job: Build
+    # defines agent pool and demands (https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=example#pool)
+    pool:
+      vmImage: ubuntu-latest
+
+    steps:
+    - template: templates/create-github-release.yml@templates
