@@ -22,6 +22,4 @@ stages:
       vmImage: ubuntu-latest
 
     steps:
-    - checkout: self 
-      persistCredentials: true
     - template: templates/create-github-release.yml@templates
