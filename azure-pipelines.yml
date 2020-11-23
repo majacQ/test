@@ -14,13 +14,14 @@ variables:
 - group: github
 
 stages:
-- stage: 'Build'
-  jobs:
-  - job: Build
-    # defines agent pool and demands (https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=example#pool)
-    pool:
-      vmImage: ubuntu-latest
+# - stage: 'Build'
+#   jobs:
+#   - job: Build
+#     # defines agent pool and demands (https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=example#pool)
+#     pool:
+#       vmImage: ubuntu-latest
 
-    steps:
-    # - template: templates/create-github-release.yml@templates
-    - template: templates/build-dotnet.yml@templates
+#     steps:
+#     - template: templates/create-github-release.yml@templates
+
+- template: templates/build-dotnet.yml@templates
