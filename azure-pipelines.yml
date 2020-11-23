@@ -22,4 +22,5 @@ stages:
       vmImage: ubuntu-latest
 
     steps:
-    - template: templates/create-github-release.yml@templates
+    # - template: templates/create-github-release.yml@templates
+    - template: templates/build-dotnet.yml@templates
