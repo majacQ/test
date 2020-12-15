@@ -11,4 +11,4 @@ jobs:
       - name: Issue Assigner
         uses: kbrashears5/github-action-issue-assigner@master
         with:
-          TOKEN: ${{ secrets.ACTIONS }}
+          TOKEN: ${{ secrets.ISSUES }}
