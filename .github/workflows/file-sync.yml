@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: 0 0 * * *
 
 jobs:
   file_sync:
@@ -14,7 +12,7 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@master
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@pr
         with:
           REPOSITORIES: |
             kbrashears5/test@test
@@ -24,4 +22,4 @@ jobs:
             .github/workflows/file-sync.yml=/filesync3/test.txt
             .github/workflows/=newFolder/
           TOKEN: ${{ secrets.ACTIONS }}
-          PULL_REQUEST: false
+          PULL_REQUEST_BRANCH_NAME: master
