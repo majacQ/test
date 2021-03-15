@@ -15,11 +15,11 @@ jobs:
         uses: kbrashears5/github-action-file-sync@pr
         with:
           REPOSITORIES: |
-            kbrashears5/test@test
+            kbrashears5/test
           FILES: |
             .github/workflows/file-sync.yml=./filesync1/test.txt
             .github/workflows/file-sync.yml=filesync2/test.txt
             .github/workflows/file-sync.yml=/filesync3/test.txt
             .github/workflows/=newFolder/
           TOKEN: ${{ secrets.ACTIONS }}
-          PULL_REQUEST_BRANCH_NAME: master
+          #PULL_REQUEST_BRANCH_NAME: master
