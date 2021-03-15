@@ -22,3 +22,4 @@ jobs:
             .github/workflows/file-sync.yml=/filesync3/test.txt
             .github/workflows/=newFolder/
           TOKEN: ${{ secrets.ACTIONS }}
+          PULL_REQUEST_BRANCH_NAME: master
