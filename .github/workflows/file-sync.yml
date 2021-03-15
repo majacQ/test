@@ -12,7 +12,7 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@master
       - name: File Sync
-        uses: kbrashears5/github-action-file-sync@pr
+        uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
             kbrashears5/test
