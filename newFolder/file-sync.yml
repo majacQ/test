@@ -1,0 +1,25 @@
+name: File Sync
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  file_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetching Local Repository
+        uses: actions/checkout@master
+      - name: File Sync
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            kbrashears5/test
+          FILES: |
+            .github/workflows/file-sync.yml=./filesync1/test.txt
+            .github/workflows/file-sync.yml=filesync2/test.txt
+            .github/workflows/file-sync.yml=/filesync3/test.txt
+            .github/workflows/=newFolder/
+          TOKEN: ${{ secrets.ACTIONS }}
+          #PULL_REQUEST_BRANCH_NAME: master
