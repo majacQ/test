@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo 'Pausing 1 second'
-sleep 1
 echo 'Undoing checkout after bumping version'
-git checkout -q -- ./package.json
+#git checkout -q -- ./package.json
 echo 'Undid checkout'
