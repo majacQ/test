@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Test repo",
     "keywords": [
         "test",
@@ -8,5 +8,10 @@
         "kevin"
     ],
     "homepage": "www.google.com ",
-    "devDependencies": {}
+    "devDependencies": {
+        "pre-commit": "~1.2.2"
+    },
+    "scripts": {
+        "precommit": "npm version patch --force"
+    }
 }
