@@ -1,5 +1,6 @@
 #!/bin/sh
 
-echo 'Undoing checkout after bumping version'
+#echo 'Undoing checkout after bumping version'
 #git checkout -q -- ./package.json
-echo 'Undid checkout'
+#echo 'Undid checkout'
+echo 'Bumped version successfully'

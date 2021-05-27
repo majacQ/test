@@ -2,4 +2,3 @@
 
 echo 'Bumping patch version'
 npm version patch --commit-hook false --git-tag-version false --force
-echo 'Version bumped'
