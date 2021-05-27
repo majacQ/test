@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "1.0.26",
+    "version": "1.0.27",
     "description": "Test repo",
     "keywords": [
         "test",
@@ -15,6 +15,6 @@
         "precommit"
     ],
     "scripts": {
-        "precommit": "npm version patch --commit-hooks false --git-tag-version false --force"
+        "precommit": "npm version patch --git-tag-version false --force"
     }
 }
