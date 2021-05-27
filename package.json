@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "1.0.30",
+    "version": "1.0.31",
     "description": "Test repo",
     "keywords": [
         "test",
@@ -9,21 +9,9 @@
     ],
     "homepage": "www.google.com ",
     "devDependencies": {
-        "post-commit": "0.0.1",
-        "pre-commit": "~1.2.2"
+        "node-git-hooks": "~1.0.6"
     },
-    "pre-commit": [
-        "pre-commit-message",
-        "pre-commit"
-    ],
-    "post-commit": [
-        "post-commit-message",
-        "post-commit"
-    ],
     "scripts": {
-        "pre-commit": "npm version patch --commit-hook false --git-tag-version false --force",
-        "pre-commit-message": "echo 'Bumping patch version'",
-        "post-commit": "git checkout -q -- ./package.json",
-        "post-commit-message": "echo 'Undoing checkout after bumping version'"
+        "postinstall": "node-git-hooks"
     }
 }
