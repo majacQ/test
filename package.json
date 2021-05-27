@@ -21,7 +21,7 @@
         "post-commit"
     ],
     "scripts": {
-        "pre-commit": "npm version patch --git-tag-version false --force",
+        "pre-commit": "npm version patch --commit-hook false --git-tag-version false --force",
         "pre-commit-message": "echo 'Bumping patch version'",
         "post-commit": "git checkout -q -- ./package.json",
         "post-commit-message": "echo 'Undoing checkout after bumping version'"
