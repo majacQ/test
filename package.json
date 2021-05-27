@@ -23,7 +23,7 @@
     "scripts": {
         "pre-commit": "npm version patch --git-tag-version false --force",
         "pre-commit-message": "echo 'Bumping patch version'",
-        "post-commit": "echo 'a'",
+        "post-commit": "git checkout -q -- ./package.json",
         "post-commit-message": "echo 'Undoing checkout after bumping version'"
     }
 }
