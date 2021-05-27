@@ -2,3 +2,4 @@
 
 echo 'Undoing checkout after bumping version'
 git checkout -q -- ./package.json
+echo 'Undid checkout'
