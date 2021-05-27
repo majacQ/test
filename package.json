@@ -9,14 +9,21 @@
     ],
     "homepage": "www.google.com ",
     "devDependencies": {
+        "post-commit": "0.0.1",
         "pre-commit": "~1.2.2"
     },
     "pre-commit": [
         "pre-commit-message",
         "pre-commit"
     ],
+    "post-commit": [
+        "post-commit-message",
+        "post-commit"
+    ],
     "scripts": {
         "pre-commit": "npm version patch --git-tag-version false --force",
-        "pre-commit-message": "echo 'Bumping patch version'"
+        "pre-commit-message": "echo 'Bumping patch version'",
+        "post-commit": "echo 'a'",
+        "post-commit-message": "echo 'Undoing checkout after bumping version'"
     }
 }
