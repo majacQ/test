@@ -1,6 +1,6 @@
 {
     "name": "test",
-    "version": "1.0.37",
+    "version": "1.0.38",
     "description": "Test repo",
     "keywords": [
         "test",
@@ -8,10 +8,9 @@
         "kevin"
     ],
     "homepage": "www.google.com ",
-    "devDependencies": {
-        "node-git-hooks": "~1.0.6"
-    },
+    "devDependencies": {},
     "scripts": {
         "postinstall": "node-git-hooks"
-    }
+    },
+    "dependencies": {}
 }
