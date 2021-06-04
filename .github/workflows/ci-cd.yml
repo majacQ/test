@@ -14,6 +14,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Github Release
         if: ${{ github.ref == '/refs/heads/master' }}
         uses: kbrashears5/github-action-release-maker@master
