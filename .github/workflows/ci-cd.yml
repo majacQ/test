@@ -14,10 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Echo  
-        run: echo "${github.ref}"
       - name: Github Release
-        if: github.ref == '/refs/head/master'
+        if: ${{ github.ref }} == '/refs/head/master'
         uses: kbrashears5/github-action-release-maker@master
         with:
           VERSION: ${{ steps.package-version.outputs.current-version}}
