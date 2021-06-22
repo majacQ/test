@@ -34,11 +34,11 @@ jobs:
       - name: Create Package
         if: ${{ github.ref == 'refs/heads/master' }}
         run: dotnet pack
-      - name: Publish Package
-        if: ${{ github.ref == 'refs/heads/master' }}
-        # run: dotnet nuget push
-        # env:
-        #   NUGET_AUTH_TOKEN: ${{ secrets.NPM }}
+      # - name: Publish Package
+      #   if: ${{ github.ref == 'refs/heads/master' }}
+      #   run: dotnet nuget push
+      #   env:
+      #     NUGET_AUTH_TOKEN: ${{ secrets.NPM }}
   # release:
   #   runs-on: ubuntu-latest
   #   if: ${{ github.ref == 'refs/heads/master' }}
