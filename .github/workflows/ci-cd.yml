@@ -24,7 +24,7 @@ jobs:
       - name: Use .NET Core 5.0.x
         uses: actions/setup-dotnet@v1.7.2
         with:
-          node-version: 5.0.x
+          dotnet-version: 5.0.x
           registry-url: https://api.nuget.org/v3/index.json
       - name: Install Dependencies
         run: dotnet restore
