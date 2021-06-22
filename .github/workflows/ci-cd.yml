@@ -26,6 +26,7 @@ jobs:
         with:
           dotnet-version: 5.0.x
           source-url: https://api.nuget.org/v3/index.json
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET }}
       - name: Install Dependencies
         run: dotnet restore
       - name: Build Package
@@ -39,7 +40,6 @@ jobs:
       #   if: ${{ github.ref == 'refs/heads/master' }}
       #   run: dotnet nuget push
       #   env:
-      #     NUGET_AUTH_TOKEN: ${{ secrets.NUGET }}
   # release:
   #   runs-on: ubuntu-latest
   #   if: ${{ github.ref == 'refs/heads/master' }}
