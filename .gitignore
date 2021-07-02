@@ -366,3 +366,6 @@ FodyWeavers.xsd
 
 # code coverage
 coverage
+
+# lib
+lib
