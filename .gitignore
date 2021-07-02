@@ -363,3 +363,6 @@ FodyWeavers.xsd
 
 # XML documentation files
 **/documentation.xml
+
+# code coverage
+coverage
