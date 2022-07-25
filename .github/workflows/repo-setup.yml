@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repo Setup
-        uses: kbrashears5/github-action-repo-settings-sync@master
+        uses: kbrashears5/github-action-repo-settings-sync@enabled
         with:
           REPOSITORIES: |
             kbrashears5/test
@@ -21,4 +21,3 @@ jobs:
           MERGE_COMMIT: 'false'
           REBASE_MERGE: 'false'
           DELETE_HEAD: 'true'
-          BRANCH_PROTECTION_REQUIRED_REVIEWERS: '5'
